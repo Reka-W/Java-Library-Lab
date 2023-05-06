@@ -1,5 +1,8 @@
 package libraryLab;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Library extends Book{
 
 	private static final String OPEN_HOURS = "Libraries are open daily from 9am to 5pm.";
@@ -24,11 +27,12 @@ public class Library extends Book{
 	public Library(String address) {
 		super("bookTitle");
 		this.address = address;
+		Map <String, Book> books = new HashMap<>(); 
 	}
 	
 	public void addBook() {
 
-		
+//		 firstLibrary.addBook(new Book("The Da Vinci Code"));
 	}
 
 	public static void printOpeningHours() {
