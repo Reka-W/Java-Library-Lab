@@ -6,10 +6,14 @@ public class Book {
     boolean borrowed;
 
     // Creates a new Book
+    public Book() {
+    	
+    }
+    
     public Book(String bookTitle) {
     	title = bookTitle;
     }
-   
+    
     // Marks the book as rented
     public void borrowed() {
         borrowed = true;
